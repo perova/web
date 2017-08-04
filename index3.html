@@ -5,7 +5,7 @@
     <title>css</title>
     <style>
       body {
-        background-color: black;
+        background-color: #7a8ca8;
       }
       p{
         color: white;
@@ -19,14 +19,83 @@
       *{
         font-family: "Times New Roman", Times, serif;
       }
+      [required]{
+        background-color: red;
+      }
+      div p {
+        text-transform: uppercase;
+      }
+      a[href^="https"]{
+        font-weight: bold;
+        text-decoration: none;
+        color: pink;
+      }
+      a[href^="https"]:hover {
+        color: silver;
+      }
+      a[href^="https"]:active {
+        color: red;
+      }
+      a:visited {
+        color: black;
+      }
+      table{
+        color: white;
+      }
+      tr:first-child{
+        background-color: red;
+      }
+      tr:nth-child(2){
+        background-color: yellow !important;
+      }
+      td:nth-child(2n+2){
+        background-color: violet;
+      }
+      .box {
+        font-size: 50px;
+        text-align: center;
+        width: 400px;
+        height: 300px;
+        background-color:rgb(57, 49, 102);
+        position: absolute;
+        opacity: 0.5;
+        text-shadow: 2px 12px 3px white;
+      }
+      .second-box {
+        width: 200px;
+        height: 150px;
+        background-color: #cc200a;
+        position: absolute;
+        left: 250px;
+        opacity: 0.5;
 
+      }
+      .next {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin: 1px;
+        float: left;
+      }
     </style>
-    <!-- kai zvaigzdute stiliuje css * {} tai visi paveldi, pvz, visi font, o kai nori kad pvz kokio nors imantraus, tai jau reikia parsisiusti, ir apsirasyti, 
+    <!-- kai zvaigzdute stiliuje css * {} tai visi paveldi, pvz, visi font, o kai nori kad pvz kokio nors imantraus, tai jau reikia parsisiusti, ir apsirasyti,
     @@font-face {
 
-    } -->
+    }
+  kai prideta !important, tai tada ir bus buten tas nesvarbu kokie bus prirasyti kiti stiliai
+overflow:auto ar kiti, tai apima 
+-->
   </head>
   <body>
+    <div class="">
+      <a href="http://www.vilniuscodingschool.lt">Vilnius Coding</a>
+        <a href="https://www.google.lt">Google</a>
+    </div>
+    <div class="">
+      <p>
+        hellow world!
+      </p>
+    </div>
     <p>
       hellow world!
     </p>
@@ -36,5 +105,46 @@
     <p class="biftext">
       hellow world!
     </p>
+    <input type="text" name="" value="" placeholder="Vardas" required>
+    <input type="text" name="" value="" placeholder="Amzius">
+    <table>
+      <tr>
+        <th>Nr.</th>
+        <th>Vardas</th>
+        <th>Pavarde</th>
+        <th>Amzius</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Jonas</td>
+        <td>Jonaitis</td>
+        <td>33</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Petras</td>
+        <td>Petraitis</td>
+        <td>44</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Simas</td>
+        <td>Simaitis</td>
+        <td>25</td>
+      </tr>
+    </table>
+    <div class="box">
+        hello world!
+      <div class="second-box">
+
+      </div>
+
+    </div>
+    <div class="next">
+
+    </div>
+    <div class="next">
+
+    </div>
   </body>
 </html>
