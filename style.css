@@ -1,0 +1,19 @@
+
+p {
+  background-color: grey;
+  border: 1px solid black;
+  padding: 5px;
+}
+.one {
+  position: fixed; /* kai fiksuotas, tai pvz menu baras nekeicia vietos, dar yra relative, abolute, static
+  z-index:1000; tai kai layoutas slepiasi pries ir po*/
+  top: 50px;
+}
+body{
+  background-color: blue;
+}
+@media screen and (min-width: 480px){
+  body {
+    background-color: red;
+  }
+}

@@ -1,0 +1,46 @@
+* {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+.header {
+  background-color: pink;
+  padding: 5px;
+  text-align: center;
+  margin: 1px;
+}
+.menu{
+  text-transform: uppercase;
+  background-color: #4f6c9b;
+  text-align: center;
+
+}
+.menu ul {
+  padding: 5px;
+  list-style: none;
+}
+.menu ul li {
+  display: inline-block;
+  margin: 10px;
+
+}
+.menu a{
+  margin-right: 3px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.menu a:hover{
+  color:black;
+  background-color: white;
+}
+.content {
+  background-color: violet;
+  margin: 1px;
+}
+.aside {
+  background-color: grey;
+  margin: 1px;
+}
+.footer {
+  background-color: pink;
+  text-align: center;
+}
