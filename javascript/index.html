@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>js</title>
+    <script type="text/javascript">
+      //alert("sveikas pasauli!");
+      //console.log("sveikas pasauli!");//pasitikrinimui
+      var x=5; //kintamasis
+      var y=10;
+      var suma = Add(x,y); //Add tai savo sugalvotas pavadinimas
+      var suma = Add (8,10);
+      console.log(suma);
+      var minus = Minus (x,y);
+      console.log(minus);
+
+      function Add(x,y){
+        return x+y;
+      }
+      function Minus (x,y){
+        return y-x;
+      }
+      function Minus (x,y){
+        var minusas = x+y;
+        console.log(minusas);
+        return y-x;
+      }
+    </script>
+  </head>
+  <body onload="console.log('Sveikas pasauli!!!!!!')">
+    <p onclick="console.log('sveikas!')">Labas</p>
+    <input onblur="console.log('palieku laukeli')">
+    <input type="text" name="" value="">
+  </body>
+  <!-- Objektas-->
+</html>

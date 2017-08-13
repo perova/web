@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>counting js</title>
+  </head>
+  <body>
+    <input id="x" placeholder="x"/>
+    <input id="y" placeholder="y"/>
+    <input id="suma" placeholder="suma" />
+    <button id="submit" onclick="Sudetis();">OK</button>
+
+<script type="text/javascript">
+
+// kad skaiciuotu kaip skaicius reikia pasiversti i skaicius per Number, nes supranta kaip string.
+  function Sudetis(){
+
+  //  if(isNaN(document.getElementById("x").value) || isNaN(document.getElementById("y").value)){
+  //    console.log('ne skaicius');
+  //  }else{
+    //var x = document.getElementById("x").value;
+    //var y = document.getElementById("y").value;
+    //var skaiciusX = Number(x);
+    //var skaiciusY = Number(y);
+  //  document.getElementById("suma").value = Number(document.getElementById("x").value) + Number(document.getElementById("y").value);
+    //document.getElementById("suma").value = Number(x) + Number(y);
+    //document.getElementById("suma").value= skaiciusX+skaiciusY;
+      //document.getElementById("suma").value=x+y;
+      //document.getElementById("x").value+document.getElementById("y").value
+    //}
+  //}
+/*  if(!(isNaN(document.getElementById("x").value) || isNaN(document.getElementById("y").value))){
+    document.getElementById("suma").value = Number(document.getElementById("x").value) + Number(document.getElementById("y").value);
+  }else{  console.log('ne skaicius');}
+} */
+
+if(!isNaN(document.getElementById("x").value) && !isNaN(document.getElementById("y").value)){
+  document.getElementById("suma").value = Number(document.getElementById("x").value) + Number(document.getElementById("y").value);
+}else{  console.log('ne skaicius');}
+}
+
+</script>
+  </body>
+</html>

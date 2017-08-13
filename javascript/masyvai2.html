@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>masyvai 2</title>
+  </head>
+  <body>
+    <script>
+
+var studentas1={
+  name:"Jonas",
+  surname:"Jonaitis",
+  age:18,
+  getStudent: function(){
+    return "VU mokosi studentas " +this.name +" "+ this.surname+""+
+    ",kurio amzius yra " + this.age;
+  }
+
+}
+
+
+console.log(studentas1.getStudent());
+
+//galimataip,dar galima imasyva ideti
+var studentai=[{
+  name:"Jonas",
+  surname:"Jonaitis",
+  age:18,
+  getStudent: function(){
+    return "VU mokosi studentas " +this.name +" "+ this.surname+""+
+    ",kurio amzius yra " + this.age;
+  }
+},
+
+{
+  name:"Petras",
+  surname:"Petraitis",
+  age:21,
+  getStudent: function(){
+    return "VGTU mokosi studentas " +this.name +" "+ this.surname+""+
+    ",kurio amzius yra " + this.age;
+  }
+}
+];
+
+for (var i = 0; i < studentai.length; i++) {
+  console.log(studentai[i].getStudent());
+}
+
+
+
+
+
+
+
+console.log(studentas1.getStudent());
+
+      var auto1 = ["VW","BMW","VOLVO"];
+
+
+      var auto2 = ["FORD","TESLA"];
+
+      var auto =auto1.concat(auto2);
+      auto = auto.slice(1,3)
+      auto.sort();
+      for (var i = 0; i < auto.length; i++) {
+//kai length, nedeti lygybes
+        console.log(auto[i]);}
+
+    </script>
+  </body>
+</html>
