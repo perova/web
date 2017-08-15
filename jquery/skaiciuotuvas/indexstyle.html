@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/code0.js"></script>
+    <style>
+    *{
+      font-family: 'Chewy', cursive;
+      font-size: 30px;
+    }
+    .container {
+      background-color: #737e8e;
+      width: 330px;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+    }
+      .one{
+        width: 310px;
+        height: 50px;
+        text-align: right;
+        margin: 2px;
+        padding: 2px;
+        border-radius: 2px;
+        margin-bottom: 4px;
+      }
+      .col{
+        width: 100px;
+        height: 50px;
+        margin: 1px;
+        border-radius: 2px;
+        margin-bottom: 4px;
+      }
+      .two {
+        width: 100px;
+        height: 75px;
+        text-align: center;
+        margin-bottom: 4px;
+        border-radius: 2px;
+      }
+      .one:hover {
+        background-color: black;
+        color:white;
+      }
+      .col:hover{
+        background-color: #21262d;
+        color: white;
+      }
+      .two:hover{
+        background-color: #21262d;
+        color: white;
+      }
+    </style>
+    <title> calculator js</title>
+  </head>
+  <body>
+    <div class="container">
+    <input id="field" class="one" type="text"  > <br>
+    <button id="btn7"class="col" type="button" name="" >7</button>
+    <button id="btn8"class="col" type="button" name="" >8</button>
+    <button id="btn9"class="col" type="button" name="" >9</button><br>
+    <button id="btn5"class="col" type="button" name="" >5</button>
+    <button id="btn6"class="col" type="button" name="" >6</button>
+    <button id="btn1"class="col" type="button" name="" >1</button><br>
+    <button id="btn2"class="col" type="button" name="" >2</button>
+    <button id="btn3"class="col" type="button" name="" >3</button>
+    <button id="btn4"class="col" type="button" name="" >4</button><br>
+    <button id="clear"class="col" type="button" name="" >C</button>
+    <button id="btn0"class="col" type="button" name="" >0</button>
+  <button id="sum" class="col" type="button" name="" >+</button><br>
+  <button  id="minus"class="col" type="button" name="" >-</button>
+  <button id="divide"class="col" type="button" name="" >/</button>
+  <button id="multiply"class="col" type="button" name="" >x</button><br>
+  <button id="count" class="two" type="button" name="" >=</button>
+
+    </div>
+  </body>
+</html>

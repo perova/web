@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/custom.js"></script>
+		<script>
+		$(function(){
+			$(".straipsnioPaveiksliukas").click(function(){
+				var small_path = $(this).attr("src");
+				var large_path = small_path.replace("_small","")
+				var paveiksliukas = $("<img/>");
+				paveiksliukas.attr({src:large_path});
+				paveiksliukas.attr({class:"big"});
+				$(".container").html(paveiksliukas);
+
+				$(".modal").css({visibility:"visible"});
+				$(".modal").animate({opacity:1},5000);//5000 tai per kiek sec atsiras
+				});
+				$(".modal").click(function(){
+
+
+					$(".modal").animate({opacity:0},2000,function(){
+						$(".modal").css({visibility:"hidden"});
+					});
+
+				});
+			})
+		</script>
+		<style >
+			.modal{
+				width: 2000px;
+				height: 2000px;
+				top:0px;
+				left:0px;
+				width: 100%;
+				height: 100%;
+				display: table;
+				position: absolute;
+				visibility: hidden;
+				background-color: rgba(0, 0, 0, 0.5);
+				opacity: 0;
+
+			}
+			.container{
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.big{
+				position: relative;
+				left: -350px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="modal">
+			<div class="container">
+
+			</div>
+		</div>
+
+		<header class="row">
+			<section class="col-12">
+				<div class="haveborder">
+					Mano svetainė
+				</div>
+			</section>
+		</header>
+		<nav class="row">
+			<nav class="col-12">
+				<div class="haveborder">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Events</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</nav>
+		<section class="row">
+			<section class="col-9">
+				<article class="post">
+					<header>
+						<h1>ROBBIE WILLIAMS THE HEAVY ENTERTAINMENT SHOW TOUR 2017</h1>
+					</header>
+					<article class="content">
+							<p>
+								<img src="images/opus_small.jpg" class="straipsnioPaveiksliukas" />Valiūkiškoji britų superžvaigždė Robbie Williamsas po dvejų metų pertraukos sugrįžta į Lietuvą! 2017 m. rugpjūčio 16 dieną Vilniaus Vingio parke jis surengs vienintelį koncertinio turo „ROBBIE WILLIAMS THE HEAVY ENTERTAINMENT SHOW TOUR 2017“ pasirodymą Baltijos šalyse.
+							</p>
+					</article>
+				</article>
+				<article class="post">
+					<header>
+							<h1>9-tasis Bardai LT gimtadienis</h1>
+					</header>
+					<article>
+						<p>
+							Geros muzikos ekspertai „Bardai LT“ yra įsitikinę, kad gimtadienius reikia švęsti smagiai, gausiai, gražių ir šviesių žmonių būryje, su dainomis, pajuokavimais, prasmingu pasibūvimu. Kadangi BARDAI LT gimtadieniai jau tapo vasaros tradicija, tai ir šių metų rugpjūtis, o tiksliau rugpjūčio 4 d. nebus išimtis, tądien Vilniaus mokytojų namų kiemelyje netruks muzikos, improvizacijos, poezijos, staigmenų ir sveikinimų. Žinomi bardai, aktoriai, poetai, o sulaukus didelio antplūdžio gerbėjų – bei visi norintys - sveikins BARDAI LT ir kartu kurs šventinę nuotaiką.
+						</p>
+					</article>
+				</article>
+				<article class="post">
+					x
+				</article>
+
+			</section>
+			<aside class="col-3">
+				x
+			</aside>
+		</section>
+
+		<footer class="row">
+				<section class="col-12">
+					<div>
+						Copyright Zimantas Račkauskas
+					</div>
+				</section>
+		</footer>
+	</body>
+</html>
