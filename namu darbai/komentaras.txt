@@ -1,0 +1,12 @@
+1. Puikiai
+2. Labai gerai. Uþduoties pavyzdyje taip pat buvo naudojamas trumpinys DNR, kuriam reikëtø
+naudoti <abbr> elementà. 2 paskaitos 6 skaidrëje rasite daugiau apie teksto semantikà. Galima panaudoti tokius elementus kaip: <abbr>, <acronym>, <cite>,
+<q>, <strong> ir panaðiai kai norime daugiau iðskirti ne vartotojui, SEO (Search Engine Optimization)
+3. Puikiai
+4. Ði uþduotis turëjo bûti su paveikslëliais. Su skaièiuotuvu negerai. Lentelë yra, bet mygtukai turëjo bûti formos lementai.
+5. Ði uþduotis turëjo bûti su skaièiuotuvu. Taèiau atrodo sukeistos vietomis 4 ir 5 uþduotys. figure naudojam tik vienam paveikslëliui, kuris yra su tekstu, kiti yra uþ elemento <figure> ribø.
+6. Puikiai
+7. Labai gerai. Tik elementø iðdëstymas trëtø bûti, kad po h1 visi elementai iðdëstyti pagal tà paèià vertikalià linijà.
+8. Labai gerai, tik poster="1.jpg"width="400" atributai atskiriami tarpeliu. Jeigu naudojate autoplay atributà, poster kaip ir nëra prasmës dëti.
+9. Labai gerai. Uþduotyje praðoma buvo visos ðaðkiø lentos, o parodytas fragmentas. Bet OK.
+10. Puikiai
