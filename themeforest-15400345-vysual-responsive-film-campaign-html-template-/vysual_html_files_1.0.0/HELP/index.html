@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<title>VYSUAL HTML Documentation</title>
+
+<style type="text/css">
+
+a {text-decoration: none;}
+a:hover {color: #000;}
+
+#openClose {
+	position: fixed; 
+	width: 120px; 
+	top: 20px; 
+	right: 20px; 
+	z-index: 1000;
+	font-size: 10px; 
+	font-family: sans-serif; 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	background: #f8f8f8; 
+	padding: 8px 0px;
+	text-align: center; 
+	color: #555; 
+}
+#openClose:hover {background: #eee;}
+
+#content {color:#333; max-width:700px; margin:0 auto 70px; padding:0 20px 20px; line-height: 1.2em;}
+h1,
+h2 {border-bottom:4px solid #333; font-size:20px; padding-top:50px; padding-bottom: 5px;}
+h1#title {margin-top:0;}
+h1 span {float: right;}
+h1 span.open {
+	-webkit-transform: rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform: rotate(45deg);
+}
+h2 {font-size:20px; padding:150px 0 5px; margin-bottom: 20px;}
+a {color: #3163b4}
+ul, ol {padding:0 0 0 20px;}
+ul ul {margin:10px 0 15px 20px;}
+ul {list-style: square;}
+li {margin-bottom:10px;}
+.red {color:red; font-weight:bold}
+img {display:block; max-width:100%; border:1px solid #f8f8f8; padding:3px;box-shadow: 0px 1px 1px rgba(0,0,0,.2);}
+
+#logo {
+	display: block;
+	width: 44px;
+	height: 60px;
+	margin: 0 auto 80px;
+}
+#logo img {
+	border: none;
+	padding: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+embed {margin:10px 0; max-width:100%; display:block;}
+
+.content {max-width: 700px; overflow: hidden;}
+
+a.tableContents {font-size: 12px; float: right; text-decoration: none;}
+
+#tableContents div {
+	-moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+    column-count: 2;
+    column-gap: 50px;
+}
+#tableContents {padding-top: 100px;}
+#tableContents ol {color: #aaa; font-size: 12px; font-family: sans-serif; margin: 0;}
+#tableContents ol a {text-decoration: none; font-size: 14px;}
+
+pre {
+	width: 100%; 
+    background-color: #fff;
+    background-image: linear-gradient(#fff 50%, #f3f3f3 50%);
+    background-size: 38px 38px;
+    display: block;
+    line-height: 19px;
+    margin-bottom: 10px;
+    overflow-x: visible;
+    overflow-y: hidden;
+    padding: 0 0 0 4px;
+    color: #333333;
+    font-size: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width:400px) {
+	#tableContents div {
+		-moz-column-count: 1;
+	    -webkit-column-count: 1;
+	    column-count: 1;
+	}
+}
+</style>
+</head>
+
+<body>
+<div id="content">
+
+
+<!--INTRO-->
+<div id="tableContents">
+	<a id="logo" target="_blank" href="http://themolitor.com/shop"><img src="images/tm.png" alt="" /></a>
+	<h1 id="title">VYSUAL: Responsive Film Campaign HTML Template</h1>
+	<div><ol></ol></div>
+</div>
+
+
+<!--RESOURCES-->
+<h2 id="resources">Support Resources</h2>
+<ul>
+	<li>Online Help File: <a href="http://themolitor.com/help/vysual_html">http://themolitor.com/help/vysual_html</a></li>
+	<li>FAQ and troubleshooting: <a href="#faq">click here</a></li>
+	<li>Support Forums: <a target="_blank" href="http://www.themolitor.com/forums/">http://www.themolitor.com/forums/</a></li>
+	<li>Customization Requests: <a target="_blank" href="http://themolitor.com/custom">http://themolitor.com/custom</a></li>
+	<li>Theme Demo: <a target="_blank" href="http://themes.themolitor.com/vysual_html_landing">http://themes.themolitor.com/vysual_html_landing</a></li>
+</ul>
+
+
+<!--INSTALLATION-->
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Download the final zip file from your downloads page.</li>
+<li>Unzip the final zip file; you should now have a final download folder.</li>
+<li>Do NOT upload the final download folder. Open up the final download folder.</li>
+<li>Browse the contents and find the actual template folder. If you look inside the template folder, you will see a “style.css” file. This is how you know you have found the template folder.</li>
+<li>Upload ONLY the template folder to your designated directory.</li>
+</ol>
+
+
+<!--LOGO SETUP-->
+<h2 id="logoSetup">Logo Setup</h2>
+<p>There are two logos needed for the different types of screens currently out there. The hi-res version should be two times (2x) the size of the standard logo with "@2x" appended to the name.</p>
+<p>logo.png - 217×61</p>
+<img style="background:#e1e1e1; padding:15px;" src="images/logo.png" alt="" />
+<p>logo@2x.png - 436×121</p>
+<img style="background:#e1e1e1; padding:15px;" src="images/logo@2x.png" alt="" />
+
+
+<!--TEMPLATE FILES-->
+<h2 id="templates">Template Files</h2>
+<ul>
+<li><strong>aside_category.html</strong> - displays a horizontal list of items intended for "cast & crew" styled pages from the demo site.</li>
+<li><strong>gallery.html</strong> - displays a gallery of full screen images with title and description text.</li>
+<li><strong>index.html</strong> - displays a center play button with reviews.</li>
+<li><strong>page.html</strong> - displays a standard page with centered content.</li>
+<li><strong>post_category.html</strong> - displays a horizontal list of items intended for "news" styled pages from the demo site.</li>
+<li><strong>post.html</strong> - displays a standard post with links to next/previous post pages (if applicable).</li>
+<li><strong>ratings.html</strong> - displays available rating options. This template is not used in any templates. It's intended to be a copy/paste source.</li>
+<li><strong>videos_list.html</strong> - displays a horizontal list of items intended for "videos 2" styled pages from the demo site.</li>
+<li><strong>videos_page_1.html</strong> - displays a full screen image with a centered play button. Additional details available in the lower-right corner.</li>
+</ul>
+
+
+<!--MENU-->
+<h2 id="menu">Main Menu</h2>
+<p>The main menu displays in the sidebar for each page. The markup is as follows...</p>
+<img src="images/menu.jpg" alt="" />
+<p>The "current-menu-item" class highlights the current page.</p>
+
+
+<!--HOME PAGE-->
+<h2 id="homePage">Home Page</h2>
+<p>When using the "index.html" template, the page will display a centered play button and reviews that cycle in the lower right-hand corner.</p>
+<img src="images/home.jpg" alt="" />
+<p>The markup is managed as follows...</p>
+<img src="images/index_markup.jpg" alt="" />
+<p>To auto-play the video on the home page, remove the comments at the bottom of custom.js as show below...</p>
+<img src="images/auto-play-video.jpg" alt="" />
+
+
+<!--GALLERY PAGE-->
+<h2 id="galleryPage">Gallery Page</h2>
+<p>When using the "gallery.html" template, the theme will automatically grab any images you have listed and display them full screen.</p>
+<img src="images/gallery_page.jpg" alt="" />
+<p>The markup is managed as follows...</p>
+<img src="images/gallery_markup.jpg" alt="" />
+
+
+<!--VIDEO PAGE-->
+<h2 id="videoPage">Video Page</h2>
+<p>When using the "videos_page_1.html" template, the page displays a single video post with play button and title/content in the lower-right corner. There are arrow links to additional video posts.</p>
+<img src="images/video.jpg" alt="" />
+<p>The markup is managed as follows...</p>
+<img src="images/videos_page_markup.jpg" alt="" />
+
+
+<!--AUDIO-->
+<h2 id="audio">Audio</h2>
+<p>The audio is controlled in the lower left-hand corner of each page. The markup is as follows...</p>
+<img src="images/audio_markup.jpg" alt="" />
+<p>The auto-playing feature is controlled from the bottom of custom.js. The markup is as follows... </p>
+<img src="images/auto-play.png" alt="" />
+<p>Remove or comment out the above line to disable the auto-play feature.</p>
+
+
+<!--IMAGES-->
+<h2 id="images">Images</h2>
+<ul>
+<li><strong>Full screen background</strong> - no spcecific size required, but 16:9 aspect ratio is suggested.</li>
+<li><strong>Post listings</strong> - images should be 700x450.</li>
+<li><strong>Post grid gallery</strong> - images should be 150x150</li>
+<li><strong>Logo</strong> - no specific size required, but an additional logo image is needed for hi-res displays. <a href="#logoSetup">More info</a></li>
+</ul>
+
+
+<!--BACKGROUND VIDEO-->
+<h2 id="bgvideo">Background Video</h2>
+<p>The background video feature is controlled from <strong>scripts/custom.js</strong>. The video background system currently requires an MP4 video. The markup is as follows...</p>
+<img src="images/video_bg.jpg" alt="" />
+<p>The "poster" setting is used to display an image for when background video is not supported. <a href="#faq">More info &raquo;</a></p>
+
+
+<!--SOCIAL LINKS-->
+<h2 id="social">Social Links</h2>
+<p>Social links appear in the lower right-hand corner of each page. That markup is as follows...</p>
+<img src="images/social.jpg" alt="" />
+
+<!--FOOTER CREDITS-->
+<h2 id="footerCredits">Footer Credits</h2>
+<p>The credits text is located at the bottom of each page template. To create the "poster credits" style, simply use <code>[SQUARE BRACKETS]</code> to group text together and <code>(round brackets)</code> to make text small.</p> 
+<p>For example... </p>
+<pre>
+[STUDIO NAME PICTURES (presents)] [(an) PRODUCERS (production)] [(a) JOHN DOE (picture)]
+</pre>
+<p>...displays like this...</p>
+<img src="images/credits.png" alt="" />
+
+
+<!--RETINA READY-->
+<h2 id="retina">Retina Ready</h2>
+<p>This theme comes retina ready. Simply upload another image at twice the size and add "@2x" to the end of the name. For example, if you want to use "myimage.jpg" at 100x200, upload "myimage@2x.jpg" at 200x400.</p>
+
+
+<!--JAVASCRIPT-->
+<h2 id="javascript">JavaScript</h2>
+<p>This theme imports the following JavaScript files:</p>
+<ol>
+<li>jQuery: jQuery is a JavaScript library that greatly reduces the amount of code that you must write.</li>
+<li>custom.js: The custom.js file provides some custom scripts for jQuery.</li>
+<li>background.js, core.js, transition.js: These scripts are used to display a video background.</li>
+<li>retina.js: Detects retina displays and serves high resolution images. <a href="#retina">More info &raquo;</a></li>
+<li>spin.js: This creates a loading animation that is not image based.</li>
+</ol>
+
+
+<!--FAQ-->
+<h2 id="faq">FAQ and Troubleshooting</h2>
+
+<br />
+<h4>Why does the background video not play on mobile?</h4>
+<p>Mobile devices don't allow video to auto play as they require user activation (i.e. the user has to click "play" for anything to happen). As a result, the background video would not play when the page loads. Additionally, since there is no "play" button, there's no way for the user to activate the background video. This is the reason the image is displayed instead of a non-playing, inaccessible video background for mobile devices.</p>
+
+<br />
+<h4>Why does audio not work on mobile devices?</h4>
+<p>Mobile devices don't provide consistent audio control. The audio is a device/system feature, not a browser/site feature, so it doesn't provide the same experience or control that a desktop browser does.</p>
+<p>For example, on an iPad the audio would not stop if you navigate to a different site or leave the web browser app all together. For this reason, the audio feature is deactivated on mobile devices. </p>
+
+<br />
+<h4>Can I auto-rotate through the videos template?</h4>
+<p>With the way VYSUAL is setup, the videos page template uses AJAX to load the next post/video when you click the arrows on the page. Since AJAX is being used, the amount of time it takes for the next post to appear varies depending on internet connection speed and the size of the page being loaded.</p>
+
+<p>For example, I click the arrow and the next post appears in 2 seconds. I click it again and the next post appears in 3 seconds. On a different machine/location, I click the arrow and the post appears in 5 seconds - maybe you see where I'm going with this...</p>
+<p>Since AJAX is used, there is no way to KNOW how long the post will take to load. If an auto-rotation feature was applied, this could cause issues to occur -- such as the page appearing and then a second later the next page appears.</p>
+<p><strong>CONCLUSION:</strong> Auto-rotation is NOT an option/recommended because VYSUAL uses AJAX. </p>
+
+<br />
+<h4>Customizer settings not working (autoplay, slideshow, etc.)</h4>
+<p>If you're experiencing an issue with the Customizer settings not working (i.e. audio won't auto play, slideshow doesn't work, etc.), the issue might be related to the lack of Widgets.</p>
+<p>There appears to be a WordPress bug that requires a widget to be active in order for the Customizer settings that appears AFTER the widget section to load. If you're not using any widgets, this may be the issue.</p>
+<p><strong>SOLUTION:</strong> Activate a text widget and leave the title/content blank. This will allow WordPress to continue loading the rest of the Customizer settings without an actual widget being displayed in the sidebar area.
+</p>
+
+<br />
+<h4>Scroll Bars Look Different</h4>
+<p>Each OS (and browser) treats scroll bars differently. For example, Mac OS has a system setting that allows you to control if scroll bars are hidden or visible on the page. In addition to OS system settings, each browser displays scroll bars a little bit different. Some have transparent bars that fade away when you're done scrolling and others have old-school blue and bulky scroll bars at all times (sexy, right?...not so much).</p>
+<p>Please keep in mind: scroll bars are a system-controlled element, not a theme-controlled element. Currently only one browser (Chrome) allows CSS to control some elements of the scroll bar design, but this option is currently very limited. There is some popular approaches that hide the scroll bars and utilize JavaScript to add 100% custom scroll bars, but this approach is VERY buggy and causes issues on most mobile devices.</p>
+<p>If you think your site has issues, please provide the details of both the OS and web browser that you're using and I'll be sure to check it out for issues. As always, please be sure to compare the performance of your site against the demo site for reference: <a rel="nofollow" href="http://themes.themolitor.com/vysual">http://themes.themolitor.com/vysual</a></p>
+
+
+<!--UPDATES-->
+<h2 id="changelog">Changelog</h2>
+<pre>
+v 1.0.0 - March 2015
+* Initial Release
+</pre>
+
+</div><!--end content-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery.noConflict(); jQuery(document).ready(function(){
+	
+	var tableContentsUl = jQuery("#tableContents ol");
+	
+	jQuery('h2').each(function(){
+		var thisH = jQuery(this),
+			thisTitle = thisH.html(),
+			thisId = thisH.attr('id');
+		
+		thisH.append('<a class="tableContents" href="#tableContents">Table of Contents &uarr;</a>');
+			
+		tableContentsUl.append('<li><a href="#'+ thisId +'">'+ thisTitle +'</a></li>');
+	});
+});
+</script>
+
+
+</body>
+</html>
