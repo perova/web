@@ -10,3 +10,10 @@ naudoti <abbr> elementà. 2 paskaitos 6 skaidrëje rasite daugiau apie teksto sema
 8. Labai gerai, tik poster="1.jpg"width="400" atributai atskiriami tarpeliu. Jeigu naudojate autoplay atributà, poster kaip ir nëra prasmës dëti.
 9. Labai gerai. Uþduotyje praðoma buvo visos ðaðkiø lentos, o parodytas fragmentas. Bet OK.
 10. Puikiai
+11. Laba gerai. Tik laikomës tinkamo atitraukimo nuo kraðto. p elementas yra toje paèioje linijoje kaip ir h1 elementas. style11.css faile deklaracija color:green; turi bûti atitraukta nuo kraðto ir virðuje nereikia palikti tuðèios eilutës.
+12. Laba gerai. Tik laikomës tinkamo atitraukimo nuo kraðto. p elementas yra toje paèioje linijoje kaip ir h1 elementas, atitinkamai h2 elementas yra taip pat toje paèioje linijoje kaip ir h1 elementas.
+13. Puikiai.
+14. Puikiai
+15. Puikiai
+16. Gerai. Tik neblogai dar bûtø turëti checkbox ir select elementus
+17. Labai gerai
