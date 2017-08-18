@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-3.2.1.js">
+
+    </script>
+    <script type="text/javascript">
+
+    function GetFirstMonthWeekDay() {
+      var date = new Date();
+      var month = date.getMonth();
+      var year = date.getFullYear();
+      var currentMonthFirstDay = new Date(year,month,1);
+      return currentMonthFirstDay.getDay();
+    }
+      function GetLastDay() {
+        var date = new Date();
+        var month = date.getMonth();
+        var year = date.getFullYear();
+        return  new Date(year,month+1,0).getDate();
+
+      }
+  $(function(){
+      function GetMonthInLithuania(){
+        var months = [
+          "Sausis",
+          "Vasaris",
+          "Kovas",
+          "Balandis",
+          "Gegužė",
+          "Birželis",
+          "Liepa",
+          "Rugpjūtis",
+          "Rugsėjis",
+          "Spalis",
+          "Lapkritis",
+          "Gruodis"];
+          var date = new Date();
+          return months[date.getMonth()];
+        }
+})
+$(function(){
+      var currentWeek = 1;
+      var currentDay = 1;
+
+      while (true) {
+      var currentWeek = 1;
+      var week = $("<div</div>");
+      week.attr({class:"week"});
+      week.attr({id:"week" + currentWeek});
+      $("#calendar").append(week);
+
+      for (var i = 1; i <= 7; i++){
+        var day = $("<div</div>");
+        day.attr({class:"day"});
+        day.attr({id:"day"+currentDay});
+        day.text(currentDay);
+        week.append(day);
+        currentDay++;
+    }
+      if(currentWeek == 5){
+        break;
+      }
+
+    currentWeek++
+  }
+})
+
+
+
+
+
+
+
+
+
+
+        //console.log(GetMonthInLithuania());
+/*
+        var date = new Date();
+
+        var month = date.getMonth();
+
+        var year = date.getFullYear();
+
+        var currentMonthFirstDay = new Date(year,month,1);
+
+        var currentMonthLastDay = new Date(year,month+1,0);
+
+        var lastDayOfCurrentMonth =  currentMonthLastDay.getDate();
+
+        var weekDayOfCurrentMothLastDay = currentMonthLastDay.getDay();
+
+        var firstSunday = new Date(2017,7,8);
+
+        var weekday =firstSunday.getDay();
+
+        var weekdays = [
+          "Pirmadienis",
+          "Antradienis",
+          "Treciadienis",
+          "Ketvirtadienis",
+          "Penktadienis",
+          "Sestadienis",
+          "Sekmadienis"
+          ];
+          if(sunday == 0) {
+            sunday =7;
+          }
+          console.log(weekdays[6]);
+            console.log(weekdays[sunday-1]); */
+
+    </script>
+<style media="screen">
+  #calendar{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+  }
+  .week{
+    border: 1px solid black;
+  }
+</style>
+    <title></title>
+  </head>
+  <body>
+<div id="calendar">
+
+</div>
+  </body>
+</html>

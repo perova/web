@@ -16,12 +16,18 @@
 				$(".container").html(paveiksliukas);
 
 				$(".modal").css({visibility:"visible"});
-				$(".modal").animate({opacity:1},5000);//5000 tai per kiek sec atsiras
+				//$(".modal").animate({opacity:1},5000,function(){
+				$(".modal").fadeIn("slow",function () {
+
+
+				$(".big").animate({left:"0px"});
+				});//5000 tai per kiek sec atsiras
+
 				});
 				$(".modal").click(function(){
 
-
-					$(".modal").animate({opacity:0},2000,function(){
+					$(".modal").fadeOut("slow",function () {
+					//$(".modal").animate({opacity:0},2000,function(){
 						$(".modal").css({visibility:"hidden"});
 					});
 
@@ -40,8 +46,7 @@
 				position: absolute;
 				visibility: hidden;
 				background-color: rgba(0, 0, 0, 0.5);
-				opacity: 0;
-
+				
 			}
 			.container{
 				text-align: center;
