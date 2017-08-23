@@ -1,3 +1,5 @@
+
+
 <?php
 if(isset($_COOKIE["lankytojas"])){
 echo $_COOKIE["lankytojas"];
