@@ -5,8 +5,8 @@
 
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
-	
-	<h1>Skelbimai</h1>
+
+	<h1>SKELBIMAI</h1>
 
 		@if (isset($advert))
 		{!! Form::model($advert, ['route'=>['adverts.update',$advert->id], 'method'=>'put']) !!}

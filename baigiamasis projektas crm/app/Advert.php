@@ -14,6 +14,7 @@ class Advert extends Model
             'district',
             'street',
             'price',
-            'broker'
+            'broker',
+            'user_id'
             ];
 }

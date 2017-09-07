@@ -5,7 +5,7 @@
 
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-<h1>Naudotojai</h1>
+<h1>VARTOTOJAI</h1>
     @if (isset($user))
     {!! Form::model($user, ['route'=>['users.update',$user->id], 'method'=>'put']) !!}
     @else
@@ -20,9 +20,11 @@
                 </ul>
             </div>
         @endif
-
         <div class="form-group">
-            Tipas:{!! Form::text('name', null,['class' => 'form-control', 'placeholder' => 'Vardas']) !!}
+            Tipas:{!! Form::select('type', ['admin' => 'admin', 'user' => 'user']) !!}
+        </div>
+        <div class="form-group">
+            {!! Form::text('name', null,['class' => 'form-control', 'placeholder' => 'Vardas']) !!}
         </div>
         <div class="form-group">
             {!! Form::text('surname', null, ['class' => 'form-control', 'placeholder' => 'Pavarde']) !!}

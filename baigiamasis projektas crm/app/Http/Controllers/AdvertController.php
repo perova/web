@@ -16,7 +16,7 @@ class AdvertController extends Controller
      */
     public function index()
     {
-        $adverts= Advert::orderBy('created_at','desc')->paginate(1);
+        $adverts= Advert::orderBy('created_at','desc')->paginate(2);
         
        
         return view('home',['adverts'=>$adverts]);

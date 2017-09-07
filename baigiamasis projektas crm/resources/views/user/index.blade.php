@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="{{ route('users.create')}}" class="btn btn-success">Create</a>
+<div class="advert_head">
+    <h1>Vartotojai</h1>
+    <a href="{{ route('users.create')}}" class="btn btn-success">+ Sukurti vartotoja</a>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -45,18 +48,12 @@
                 </tbody>
             </table>
         </div>
-
-                <!-- <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div> -->
             
     </div>
 </div>
-{{ $users->links()}}
+
+    <div class="advert_head">
+        {{ $users->links()}}
+    </div>
+  
 @endsection

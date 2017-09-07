@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="{{ route('adverts.create')}}" class="btn btn-success">Create</a>
-
+<div class="advert_head">
+<h1>SKELBIMAI</h1>
+<a href="{{ route('adverts.create')}}" class="btn btn-success">+ Sukurti nauja skelbima</a>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -19,6 +21,7 @@
                         <th class="">Mikror. / Gatvė</th>
                         <th class="">Kaina €</th>
                         <th class="">Brokeris</th>
+                        <th></th>
                         <th></th>
                         <th></th>
 
@@ -47,6 +50,7 @@
                         {!! Form::submit('Delete',['class'=> 'btn btn-danger'])  !!}
 
                         {!! Form::close() !!}</td>
+                        <td><a href="#" class="btn btn-primary">Viesinti</a></td>
                     </tr>
                    @endforeach 
                 </tbody>
@@ -65,5 +69,10 @@
             
     </div>
 </div>
-  {{ $adverts->links()}}
+  
+  
+    <div class="advert_head">
+        {{ $adverts->links()}}
+    </div>
+  
 @endsection
